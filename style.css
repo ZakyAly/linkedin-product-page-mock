@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.application {
+  height: 100vh;
+  background: #f4f2ee;
+}
+a {
+  text-decoration: none;
+  touch-action: manipulation;
+}
+button {
+  background: none;
+  border: none;
+}
+
+.global-nav {
+  background: white;
+  left: 0;
+  padding: 0 21px;
+  position: fixed;
+  top: 0;
+  width: 100vw; /* this one affecting the padding right */
+  z-index: 105;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+  margin: 0 20px;
+}
+
+.global-nav-content {
+  /* padding: 0 21px; adding padding here to solve glopal */
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 1128px;
+}
+/* .fa-lg {
+  font-size: 17.5px;
+} */
+.global-nav-items li span {
+  font-size: 10.5px;
+}
+.linkedin-logo {
+  height: 34px;
+  width: 34px;
+  display: block;
+  margin-right: 5px;
+}
+
+.global-nav-search {
+  opacity: 1;
+  opacity: 1;
+  flex-grow: 1;
+  z-index: 105;
+}
+
+.search-global {
+  position: relative;
+  max-width: 280px;
+  padding: 3px 9px;
+  border-radius: 2px;
+  background-color: #edf3f8;
+}
+
+.search-global-typeahead {
+  display: block;
+  width: 100%;
+  z-index: 0;
+}
+
+.global-nav-search input {
+  border: none;
+  box-shadow: none;
+  background-color: #edf3f8;
+  border-radius: 3px;
+  padding-left: 10px;
+  width: max-content;
+  font-size: 14px;
+  height: 34px;
+}
+
+.global-nav-nav {
+  margin-left: auto;
+  min-height: 52px;
+}
+.global-nav-items {
+  display: flex;
+  opacity: 1;
+}
+.global-nav-primary-item {
+  display: flex;
+  align-items: center;
+}
+ul li a:hover,
+ul li button:hover {
+  color: black;
+}
+
+.global-nav-primary-link {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  min-height: 52px;
+  min-width: 80px;
+  position: relative;
+  color: #717171;
+}
+
+.global-nav-primary-item-divider {
+  border-left: 1px solid rgba(140, 140, 140, 0.2);
+  padding: 0 10.5px;
+}
+
+.profile button {
+  border-radius: 50%;
+  border: none;
+}
+.profile img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.premium-link {
+  text-decoration: underline;
+  color: #91590b;
+  max-width: 100px;
+}
+
+.authentication-outlet {
+  padding-top: 52px;
+}
+.organization-outlet {
+  position: relative;
+}
+
+.scaffold-layout {
+  margin-bottom: 21px;
+}
+.scaffold-layout-container {
+  width: 1128px;
+  margin-left: 88.5px;
+  margin-right: 88.5px;
+  margin-bottom: 21px;
+}
+
+.scaffold-layout-header {
+  margin: 21px 0px;
+}
+.scaffold-layout-content {
+  margin: 21px 0px;
+  display: grid;
+  grid-template-areas: "main aside";
+  /* grid-template-columns: 0 auto; */
+  overflow: hidden;
+  column-gap: 38px;
+  justify-items: center;
+}
+.scaffold-layout-content main {
+  min-width: 0;
+  max-width: max-content;
+}
+.scaffold-layout-content aside {
+  min-width: 0;
+  max-width: 300px;
+}
+.scaffold-layout-main {
+  grid-area: main;
+  display: block;
+}
+.scaffold-layout-aside {
+  grid-area: aside;
+  display: block;
+}
+
+.hero-bg-img {
+  height: 134px;
+  width: 100%;
+}
+.ad-banner-container {
+  margin-bottom: 14px;
+}
