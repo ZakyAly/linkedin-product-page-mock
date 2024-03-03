@@ -7,7 +7,7 @@
 
 .application {
   height: 100vh;
-  background: #f4f2ee;
+  background: white;
 }
 a {
   text-decoration: none;
@@ -140,6 +140,7 @@ ul li button:hover {
 }
 .organization-outlet {
   position: relative;
+  display: flexbox;
 }
 
 .scaffold-layout {
@@ -157,34 +158,27 @@ ul li button:hover {
 }
 .scaffold-layout-content {
   margin: 21px 0px;
-  display: grid;
-  grid-template-areas: "main aside";
-  /* grid-template-columns: 0 auto; */
-  overflow: hidden;
-  column-gap: 38px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 21px;
   justify-items: center;
 }
 .scaffold-layout-content main {
-  min-width: 0;
-  max-width: max-content;
-}
-.scaffold-layout-content aside {
-  min-width: 0;
-  max-width: 300px;
-}
-.scaffold-layout-main {
-  grid-area: main;
-  display: block;
-}
-.scaffold-layout-aside {
-  grid-area: aside;
-  display: block;
-}
-
-.hero-bg-img {
-  height: 134px;
+  /* min-width: 0; */
   width: 100%;
 }
+.scaffold-layout-content aside {
+  /* min-width: 0; */
+  max-width: 300px;
+  display: flexbox;
+}
+
 .ad-banner-container {
   margin-bottom: 14px;
+}
+.scaffold-layout-aside,
+.scaffold-layout-main {
+  background-color: aqua;
+  display: flexbox;
+  border-radius: 7px;
 }
