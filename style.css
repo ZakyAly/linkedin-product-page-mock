@@ -7,7 +7,7 @@
 
 .application {
   height: 100vh;
-  background: white;
+  background: #f4f2ee;
 }
 a {
   text-decoration: none;
@@ -24,23 +24,19 @@ button {
   padding: 0 21px;
   position: fixed;
   top: 0;
-  width: 100vw; /* this one affecting the padding right */
+  width: 100vw;
   z-index: 105;
   border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-  margin: 0 20px;
 }
 
 .global-nav-content {
-  /* padding: 0 21px; adding padding here to solve glopal */
   align-items: center;
   display: flex;
   margin: 0 auto;
   min-height: 100%;
   width: 1128px;
 }
-/* .fa-lg {
-  font-size: 17.5px;
-} */
+
 .global-nav-items li span {
   font-size: 10.5px;
 }
@@ -137,25 +133,27 @@ ul li button:hover {
 
 .authentication-outlet {
   padding-top: 52px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 .organization-outlet {
   position: relative;
-  display: flexbox;
+  height: 100vh;
 }
 
 .scaffold-layout {
+  height: 100vh;
   margin-bottom: 21px;
 }
 .scaffold-layout-container {
+  height: 100vh;
   width: 1128px;
   margin-left: 88.5px;
   margin-right: 88.5px;
   margin-bottom: 21px;
 }
 
-.scaffold-layout-header {
-  margin: 21px 0px;
-}
 .scaffold-layout-content {
   margin: 21px 0px;
   display: flex;
@@ -164,13 +162,14 @@ ul li button:hover {
   justify-items: center;
 }
 .scaffold-layout-content main {
-  /* min-width: 0; */
-  width: 100%;
+  background: url(./imgs/notionhq_cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
 }
 .scaffold-layout-content aside {
-  /* min-width: 0; */
   max-width: 300px;
-  display: flexbox;
 }
 
 .ad-banner-container {
@@ -178,7 +177,6 @@ ul li button:hover {
 }
 .scaffold-layout-aside,
 .scaffold-layout-main {
-  background-color: aqua;
-  display: flexbox;
+  background-color: white;
   border-radius: 7px;
 }
