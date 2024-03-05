@@ -163,12 +163,24 @@ ul li button:hover {
   justify-items: center;
   height: 100vh;
 }
+
+.scaffold-layout-main {
+  display: grid;
+  row-gap: 14px;
+}
+.scaffold-layout-main div {
+  border-radius: 8px;
+  background-color: white;
+}
+
 .org-module-card {
+  /* 
   background: url(./imgs/notionhq_cover.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 134px;
+  height: 134px; 
+  */
   border-radius: 8px;
 }
 .scaffold-layout-content aside {
@@ -180,7 +192,6 @@ ul li button:hover {
 }
 .scaffold-layout-aside,
 .scaffold-layout-main {
-  background-color: white;
   border-radius: 8px;
   width: max-content;
 }
@@ -188,6 +199,10 @@ ul li button:hover {
 .aside-main {
   width: 300px;
   padding: 12px;
+  margin-bottom: 14px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgba(140, 140, 140, 0.2);
 }
 
 .aside-main-ad {
@@ -205,30 +220,36 @@ ul li button:hover {
 .aside-main-content {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 50px;
 }
 .aside-main-content .profile-img {
   margin-right: 16px;
   border-radius: 50%;
 }
 
-.aside-main-content h2 {
+.aside-main-content-h2 h2 {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   max-height: 60px;
-  overflow: hidden;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 .company-name {
   font-weight: 600;
 }
-
-.aside-main-content .see-jobs {
+.aside-main-content-see-jobs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.aside-main-content-see-jobs .see-jobs {
   border-radius: 16px;
   color: #0a66c2;
   border: 1px solid #0a66c2;
-  /* padding: 0 16px; */
   height: 32px;
   width: 95px;
   font-size: 15px;
