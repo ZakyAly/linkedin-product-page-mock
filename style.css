@@ -174,13 +174,12 @@ ul li button:hover {
 }
 
 .org-module-card {
-  /* 
   background: url(./imgs/notionhq_cover.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 134px; 
-  */
+  background-position: center bottom 38%;
+  height: 134px;
+  width: 807px;
   border-radius: 8px;
 }
 .scaffold-layout-content aside {
