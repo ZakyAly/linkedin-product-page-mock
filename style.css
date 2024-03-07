@@ -163,14 +163,16 @@ ul li button:hover {
   justify-items: center;
   height: 100vh;
 }
+.scaffold-layout-content aside {
+  width: 300px;
+}
+.scaffold-layout-content main {
+  width: 100%;
+}
 
 .scaffold-layout-main {
   display: grid;
   row-gap: 14px;
-}
-.scaffold-layout-main {
-  /* border-radius: 8px; */
-  /* background-color: white; */
 }
 
 .org-module-card {
@@ -179,7 +181,6 @@ ul li button:hover {
   background-size: cover;
   background-position: center bottom 38%;
   height: 134px;
-  width: 807px;
   border-radius: 8px;
 }
 .main-home {
@@ -197,12 +198,11 @@ ul li button:hover {
   height: 128px;
   width: 128px;
   margin: 4px;
-  /* border: 4px solid #fff; */
   transform: translateY(-60%);
   border-radius: 0;
 }
 .org-title {
-  transform: translateY(-150%);
+  margin-top: -70px;
 }
 .org-title h1 {
   font-weight: 600;
@@ -218,12 +218,6 @@ ul li button:hover {
 .org-nav ul {
   display: flex;
   list-style: none;
-}
-.org-nav ul li {
-}
-
-.scaffold-layout-content aside {
-  max-width: 300px;
 }
 
 .scaffold-layout-aside,
@@ -247,7 +241,7 @@ ul li button:hover {
   display: flex;
   float: right;
 }
-.ad-btn button {
+.ad-btn {
   font-size: 14px;
   cursor: pointer;
   margin-left: 8px;
