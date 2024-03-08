@@ -5,15 +5,23 @@
   padding: 0;
   margin: 0;
 }
+html {
+  background-color: #f4f2ee;
+}
 
 .application {
   height: 100vh;
-  background: #f4f2ee;
 }
-a {
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
   text-decoration: none;
   touch-action: manipulation;
 }
+
 button {
   background: none;
   border: none;
@@ -163,9 +171,7 @@ ul li button:hover {
   justify-items: center;
   height: 100vh;
 }
-.scaffold-layout-content aside {
-  width: 300px;
-}
+
 .scaffold-layout-content main {
   width: 100%;
 }
@@ -181,11 +187,8 @@ ul li button:hover {
   background-size: cover;
   background-position: center bottom 38%;
   height: 134px;
-  border-radius: 8px;
 }
 .main-home {
-  background-color: white;
-  border-radius: 8px;
   height: fit-content;
 }
 .main-home-content {
@@ -220,18 +223,16 @@ ul li button:hover {
   list-style: none;
 }
 
-.scaffold-layout-aside,
-.scaffold-layout-main {
+.scaffold-layout-aside div,
+.scaffold-layout-main div {
+  background-color: white;
   border-radius: 8px;
-  width: max-content;
 }
 
 .aside-main {
   width: 300px;
   padding: 12px;
   margin-bottom: 14px;
-  background-color: white;
-  border-radius: 8px;
   border: 1px solid rgba(140, 140, 140, 0.2);
 }
 
@@ -286,4 +287,68 @@ ul li button:hover {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
+}
+.aside-products {
+  padding: 14px;
+}
+.aside-products-title {
+  font-size: 17.5px;
+  font-weight: 600;
+}
+.aside-products-tagline {
+  font-size: 10.5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.aside-products-org {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+.aside-products-org:last-child {
+  border-bottom: none;
+}
+.aside-org-logo a img {
+  width: 48px;
+  height: 48px;
+}
+.aside-org-details {
+  padding-left: 7px;
+}
+.aside-products-subtitle {
+  font-size: 10.5px;
+  margin: 3px 0;
+}
+.aside-avatar-comment {
+  color: #717171;
+  font-size: 10.5px;
+  margin: 3px 0;
+}
+.aside-avatar {
+  display: flex;
+  margin-top: 7px;
+}
+.aside-avatar a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.aside-show-all {
+  background-color: white;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: -20px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top: 1px solid rgba(140, 140, 140, 0.2);
+  cursor: pointer;
+}
+.aside-show-all:hover {
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+}
+.aside-show-all button {
+  color: #717171;
+  font-size: 14px;
+  font-weight: 600;
 }
