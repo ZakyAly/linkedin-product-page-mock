@@ -15,7 +15,6 @@ html {
 }
 
 a,
-a:visited,
 a:hover,
 a:active {
   color: inherit;
@@ -216,6 +215,107 @@ ul li button:hover {
   font-weight: 400;
   margin-bottom: 4px;
 }
+.org-subtitle {
+  display: flex;
+  color: rgb(0, 0, 0, 0.6);
+}
+.subtitle-link {
+  font-weight: 600;
+}
+.employees-link:hover {
+  color: #0a66c2;
+  text-decoration: underline #8443ce;
+}
+.break-point::before {
+  content: "\00B7\0020\0020\0020"; /* need to understand the valeu*/
+  margin: 0 3.5px 0 3.5px;
+}
+
+.followers-and-customers {
+  margin: 14px 0 3.5px 0;
+  display: flex;
+}
+.followers-and-customers a:hover,
+.followers-and-customers button:hover {
+  text-decoration: underline;
+  color: #0a66c2;
+}
+.followers-link {
+  margin-right: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+}
+.followers-link img {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  margin-right: 7px;
+}
+.featured-customers {
+  margin-right: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.featured-customers img {
+  height: 28px;
+  width: 28px;
+  margin-right: 7px;
+}
+
+.org-actions {
+  display: inline-block;
+  padding-top: 10.5px;
+}
+
+.org-follow,
+.org-message {
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 5.25px 14px;
+  margin-top: 3.5px;
+  margin-left: 7px;
+  min-width: 135px;
+  cursor: pointer;
+}
+.org-follow {
+  color: white;
+  background-color: #0a66c2;
+}
+.org-follow:hover {
+  background-color: #004182;
+  transition-duration: 167ms;
+}
+.org-message {
+  background-color: white;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+}
+.org-message:hover {
+  background-color: #e2f0fd;
+  transition-duration: 167ms;
+  box-shadow: inset 0 0 0 1px #0a66c2;
+}
+.org-more {
+  color: rgba(0, 0, 0, 0.75);
+  border: 1px solid;
+  border-radius: 50%;
+  margin-left: 3.5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.org-more:hover {
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
 .org-nav {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
