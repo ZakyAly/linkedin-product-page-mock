@@ -176,11 +176,6 @@ ul li button:hover {
   width: 100%;
 }
 
-.scaffold-layout-main {
-  display: grid;
-  row-gap: 14px;
-}
-
 .org-module-card {
   background: url(./imgs/notionhq_cover.jpeg);
   background-repeat: no-repeat;
@@ -188,7 +183,11 @@ ul li button:hover {
   background-position: center bottom 38%;
   height: 134px;
 }
-.main-home {
+.main-home,
+.main-about,
+.main-posts,
+.main-products {
+  margin-bottom: 14px;
   height: fit-content;
 }
 .main-home-content {
@@ -218,6 +217,7 @@ ul li button:hover {
 .org-subtitle {
   display: flex;
   color: rgb(0, 0, 0, 0.6);
+  line-height: 21px;
 }
 .subtitle-link {
   font-weight: 600;
@@ -316,13 +316,84 @@ ul li button:hover {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.75);
 }
 
-.org-nav {
+.org-tabs {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
-.org-nav ul {
+.org-tabs ul {
   display: flex;
   list-style: none;
+  padding: 1px 0 1px 3.5px;
 }
+.org-tabs ul li {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10.5px 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-about {
+  padding: 21px 0 14px 0;
+  font-size: 14px;
+}
+.main-about h2 {
+  padding: 0 21px;
+}
+.org-description {
+  margin-top: 14px;
+  padding: 0 21px 14px;
+}
+.contact-and-funding {
+  display: flex;
+  padding: 0 14px 21px 14px;
+  gap: 14px;
+}
+
+.org-contact,
+.org-funding {
+  box-shadow: 0px 0px 0px 1px rgb(140 140 140/0.2);
+  width: 50%;
+  padding: 7px;
+  color: #717171;
+  font-size: 10.5px;
+}
+
+.org-contact a {
+  font-size: 12.5px;
+  color: #0a66c2;
+  font-weight: 600;
+}
+.org-contact a:hover,
+.org-funding a:hover {
+  text-decoration: underline;
+}
+.org-funding a {
+  font-size: 12.5px;
+}
+.org-value {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: black;
+}
+
+.main-show-all {
+  background-color: white;
+  padding-top: 14px;
+  text-align: center;
+  border-top: 1px solid rgba(140, 140, 140, 0.2);
+  cursor: pointer;
+}
+.main-show-all a {
+  color: #717171;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 .scaffold-layout-aside div,
 .scaffold-layout-main div {
