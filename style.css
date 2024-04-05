@@ -387,6 +387,171 @@ ul li button:hover {
   font-size: 14px;
   font-weight: 600;
 }
+
+.posts-title {
+  margin: 0 21px;
+  padding: 21px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-left-btn,
+.slide-right-btn {
+  color: rgba(0, 0, 0, 0.75);
+  border: 1px solid;
+  border-radius: 50%;
+  margin-left: 3.5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.slide-left-btn:hover,
+.slide-right-btn:hover {
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
+.posts-content {
+  padding: 3.5px 0 14px 0;
+}
+.posts-list {
+  padding-left: 14px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  /* justify-content: center; */
+  margin-bottom: 21px;
+}
+.single-post {
+  box-shadow: 0px 0px 0px 1px rgb(140 140 140/0.2);
+  width: 50%;
+  font-size: 10.5px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  margin-right: 14px;
+}
+.single-post-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 14px;
+}
+
+.post-section-org {
+  display: flex;
+}
+.post-org-details {
+  margin-top: 7px;
+  padding-left: 7px;
+}
+.post-org-details a h4:hover {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+.post-org-details a p {
+  font-size: 10.5px;
+  color: #717171;
+}
+.post-org-logo a img {
+  width: 40px;
+  height: 40px;
+}
+.post-actions-btn {
+  color: #717171;
+  border-radius: 50%;
+  margin-left: 3.5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.post-actions-btn:hover {
+  color: #717171;
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+  box-shadow: inset rgba(0, 0, 0, 0.75);
+}
+
+.single-post-content {
+  padding: 7px 14px;
+  margin-top: 7px;
+  margin-right: 7px;
+}
+.post-article {
+  font-size: 12.5px;
+}
+.post-see-more {
+  float: right;
+  color: #717171;
+}
+.post-see-more:hover {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+.single-post img {
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: -2px;
+}
+
+.post-link {
+  padding: 8px 14px;
+  background-color: #edf3f8;
+}
+
+.post-link a p {
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.post-link a span {
+  font-size: 10.5px;
+  color: #717171;
+}
+.post-reactions {
+  padding: 7px 7px;
+  margin: 7px 7px;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+}
+.post-reactions a {
+  color: #717171;
+}
+.post-reactions a:hover {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
+.like-reaction {
+  color: #378fe9;
+}
+.funny-reaction {
+  color: #44bfd3;
+  margin-left: -4px;
+}
+.love-reaction {
+  color: #df704d;
+  margin-left: -5px;
+}
+
+.post-interactions ul {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 8.5px 7px;
+  text-align: center;
+  color: #717171;
+}
+.post-interactions ul li p {
+  padding: 8.5px 7px;
+}
+.post-interactions ul li:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+  box-shadow: inset rgba(0, 0, 0, 0.75);
+}
+
 /*  */
 /*  */
 /*  */
@@ -430,7 +595,7 @@ ul li button:hover {
   border-radius: 50%;
 }
 
-.aside-main-content-h2 h2 {
+.aside-main-content-h2 {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 400;
   font-size: 15px;
