@@ -186,7 +186,8 @@ ul li button:hover {
 .main-home,
 .main-about,
 .main-posts,
-.main-products {
+.main-life,
+.main-insights {
   margin-bottom: 14px;
   height: fit-content;
 }
@@ -381,6 +382,8 @@ ul li button:hover {
   text-align: center;
   border-top: 1px solid rgba(140, 140, 140, 0.2);
   cursor: pointer;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .main-show-all a {
   color: #717171;
@@ -388,11 +391,15 @@ ul li button:hover {
   font-weight: 600;
 }
 
-.posts-title {
+.posts-title,
+.life-title,
+.insights-title {
   margin: 0 21px;
   padding: 21px 0;
   display: flex;
   justify-content: space-between;
+  font-weight: 600;
+  font-size: 21px;
 }
 .slide-left-btn,
 .slide-right-btn {
@@ -550,6 +557,32 @@ ul li button:hover {
   background-color: #ebebeb;
   transition-duration: 167ms;
   box-shadow: inset rgba(0, 0, 0, 0.75);
+}
+
+.highlights-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px;
+}
+.highlight-photo1 {
+  background: url(./life-at-notion/highlight-photo1.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 170px;
+  background-position: 50%;
+}
+.highlight-photo2 {
+  background: url(./life-at-notion/highlight-photo2.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 170px;
+  margin-left: 10.5px;
+}
+.highlight-grouped-photo {
+  background: url(./life-at-notion/highlight-grouped-photo.jpeg);
+  background-size: cover;
+  width: 100%;
+  margin-left: 10.5px;
 }
 
 /*  */
