@@ -333,8 +333,7 @@ ul li button:hover {
 }
 
 .main-about {
-  padding: 21px 0 14px 0;
-  font-size: 14px;
+  padding: 21px 0 0 0;
 }
 .main-about h2 {
   padding: 0 21px;
@@ -377,6 +376,7 @@ ul li button:hover {
 }
 
 .main-show-all {
+  height: 46.5px;
   background-color: white;
   padding-top: 14px;
   text-align: center;
@@ -399,7 +399,7 @@ ul li button:hover {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 17.5px;
 }
 .slide-left-btn,
 .slide-right-btn {
@@ -419,7 +419,7 @@ ul li button:hover {
 }
 
 .posts-content {
-  padding: 3.5px 0 14px 0;
+  padding: 3.5px 0 0 0;
 }
 .posts-list {
   padding-left: 14px;
@@ -562,27 +562,49 @@ ul li button:hover {
 .highlights-container {
   display: flex;
   justify-content: space-between;
-  padding: 21px;
+  padding: 0 21px 21px 21px;
 }
-.highlight-photo1 {
-  background: url(./life-at-notion/highlight-photo1.jpeg);
-  background-size: cover;
-  width: 100%;
+.highlight-photo1 img {
+  width: 248px;
+
   height: 170px;
   background-position: 50%;
 }
-.highlight-photo2 {
-  background: url(./life-at-notion/highlight-photo2.jpeg);
-  background-size: cover;
-  width: 100%;
+.highlight-photo2 img {
+  width: 248px;
   height: 170px;
   margin-left: 10.5px;
 }
-.highlight-grouped-photo {
-  background: url(./life-at-notion/highlight-grouped-photo.jpeg);
-  background-size: cover;
+.highlight-group {
+  display: flexbox;
   width: 100%;
   margin-left: 10.5px;
+}
+.highlight-group1,
+.highlight-group2 {
+  display: flex;
+}
+.highlight-group2 {
+  margin-top: 10.5px;
+}
+.highlight-group img {
+  width: 118.75px;
+  height: 79px;
+}
+
+.highligh-group-top-right,
+.highligh-group-bottom-right {
+  margin-left: 10.5px;
+}
+.highligh-group-bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(140, 140, 140, 0.2);
+  width: 118px;
+  font-size: small;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /*  */
