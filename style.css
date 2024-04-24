@@ -390,10 +390,13 @@ ul li button:hover {
   font-size: 14px;
   font-weight: 600;
 }
+.main-show-all:hover {
+  background-color: #ebebeb;
+  transition-duration: 167ms;
+}
 
 .posts-title,
-.life-title,
-.insights-title {
+.life-title {
   margin: 0 21px;
   padding: 21px 0;
   display: flex;
@@ -426,7 +429,6 @@ ul li button:hover {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  /* justify-content: center; */
   margin-bottom: 21px;
 }
 .single-post {
@@ -607,13 +609,125 @@ ul li button:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+.insights-container {
+  margin: 10.5px 0;
+  padding: 0 21px 21px 21px;
+}
+.insights-title {
+  padding: 16px 3px;
+  font-weight: 600;
+}
+.insights-premium i {
+  color: #e7a33e;
+  margin-right: -3px;
+}
+.insights-premium {
+  letter-spacing: 2px;
+  font-size: 9px;
+}
+.insights-premium:hover {
+  cursor: default;
+}
+
+.insights-notion {
+  font-size: 17.5px;
+}
+.insights-notion i {
+  color: #717171;
+  margin-left: 7px;
+}
+
+.insights-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(140 140 140/0.2);
+}
+
+.recent-hiers-title {
+  font-weight: 600;
+  margin-bottom: 3.5px;
+}
+.recent-hiers-details {
+  font-size: 12.5px;
+  color: #00000099;
+  margin-bottom: 3.5px;
+}
+.recent-hiers-avatars {
+  list-style: none;
+  display: flex;
+  margin-bottom: -4px;
+}
+.recent-hiers-avatars img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 3.5px;
+}
+.recent-hiers-avatars li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(140, 140, 140, 0.2);
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.headcount-growth {
+  padding-left: 80px;
+}
+.headcount-percentage span {
+  font-size: 21px;
+}
+.headcount-percentage i {
+  color: green;
+}
+.headcount-growth p {
+  font-size: 12.5px;
+}
+.headcount-growth p:last-child {
+  color: #00000099;
+}
+
+.median-tenure {
+  padding-right: 60px;
+}
+.median-tenure i {
+  color: #00000099;
+}
+.median-tenure span {
+  font-size: 21px;
+}
+.median-tenure p:last-child {
+  font-size: 12.5px;
+  color: #000000e6;
+}
+
+.unlock-insights {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 21px;
+}
+.unlock-inshights-title {
+  font-size: 17.5px;
+}
+.unlock-inshights-details {
+  font-size: 12.5px;
+  color: #00000099;
+}
+.unlock-inshights-premium {
+  color: #000000e6;
+  background-color: #f9c982;
+
+  border-radius: 16px;
+  padding: 5.25px 14px;
+  font-weight: 600;
+}
+.unlock-inshights-premium:hover {
+  background-color: #e9a540;
+  transition-duration: 167ms;
+}
 
 .scaffold-layout-aside div,
 .scaffold-layout-main div {
