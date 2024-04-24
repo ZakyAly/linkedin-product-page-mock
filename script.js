@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("single-post");
+  let slides = document.getElementsByClassName("slides");
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -23,5 +23,5 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
 
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex";
 }
