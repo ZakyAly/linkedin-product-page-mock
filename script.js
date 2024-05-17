@@ -25,3 +25,13 @@ function showSlides(n) {
 
   slides[slideIndex - 1].style.display = "flex";
 }
+
+document.querySelectorAll("li.tab-link").forEach(function (clickedTab) {
+  clickedTab.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.querySelectorAll("li.tab-link").forEach(function (currentTab) {
+      currentTab.classList.remove("active-tab");
+      clickedTab.classList.add("active-tab");
+    });
+  });
+});
