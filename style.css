@@ -190,6 +190,7 @@ ul li button:hover {
 .main-insights {
   margin-bottom: 14px;
   height: fit-content;
+  cursor: default;
 }
 .main-home-content {
   padding: 0 21px 21px 21px;
